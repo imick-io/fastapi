@@ -26,7 +26,7 @@ async def read_book(book_title: str):
 
 
 @app.get("/books/")
-async def read_category_by_query(category: str):
+async def w(category: str):
     books_to_return = []
     for book in BOOKS:
         if book.get('category').casefold() == category.casefold():
